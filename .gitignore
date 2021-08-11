@@ -70,7 +70,3 @@ atlassian*
 /generated/*
 !/generated/.htaccess
 .DS_Store
-
-# IDE files
-.idea
-.vscode
