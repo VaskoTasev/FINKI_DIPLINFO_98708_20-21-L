@@ -1,0 +1,24 @@
+{
+    "name": "vasko_tasev/theme-frontend-edible_blooms_theme",
+    "description": "Edible Blooms Theme for Magento 2",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magento/framework": "*",
+        "magento/theme-frontend-blank": "*",
+        "magento/theme-frontend-luma": "*"
+    },
+    "type": "magento2-theme",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    },
+    "version": "1.0.0"
+}
