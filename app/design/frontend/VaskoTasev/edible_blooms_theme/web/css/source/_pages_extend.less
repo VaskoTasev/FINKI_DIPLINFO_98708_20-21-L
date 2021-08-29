@@ -1,0 +1,134 @@
+// /**
+//  * Copyright © Vasko Tasev. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .pages {
+
+        .action {
+            .lib-css(box-shadow, none);
+            border-radius: 3px;
+            padding: 0 6px;
+
+            &.previous {
+                min-width: 20px;
+                margin-right: 8px;
+                background: @color-gray95;
+                .lib-css(border, 1px solid @color-black_dark);
+
+                &::before {
+                    color: @color-black_dark;
+                    font-size: @font-size__s;
+                }
+
+                &:visited::before {
+                    color: @color-black_dark;
+                }
+
+                &:hover::before {
+                    color: @color-white;
+                }
+            }
+
+            &.next {
+                min-width: 20px;
+                margin-left: 8px;
+                background: @color-gray95;
+                .lib-css(border, 1px solid @color-black_dark);
+
+                &::before {
+                    color: @color-black_dark;
+                    font-size: @font-size__s;
+                }
+
+                &:visited::before {
+                    color: @color-black_dark;
+                }
+
+                &:hover::before {
+                    color: @color-white;
+                }
+            }
+
+            &:hover {
+                color: @color-white;
+                background: @color-black_dark;
+                .lib-css(border, 1px solid @color-black_dark);
+            }
+        }
+
+        strong {
+            &.page {
+                text-align: center;
+                min-width: 20px;
+                font-size: @font-size__s;
+                font-weight: bold;
+                color: @color-white;
+                background: @color-red-primary-light2;
+                .lib-css(border, 1px solid @color-black_dark);
+                border-radius: 3px;
+            }
+        }
+
+        .item {
+            font-size: @font-size__s;
+        }
+
+        a {
+            &.page {
+                text-align: center;
+                min-width: 20px;
+                font-weight: bold;
+                color: @color-black_dark;
+                background: @color-gray95;
+                .lib-css(border, 1px solid @color-black_dark);
+                border-radius: 3px;
+
+                &:visited {
+                    color: @color-black_dark;
+                }
+
+                &:hover {
+                    color: @color-white;
+                    background: @color-black_dark;
+                    .lib-css(border, 1px solid @color-black_dark);
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .pages {
+        & &-items {
+            display: block;
+            padding: 0 40px 0;
+            position: relative;
+            white-space: normal;
+            z-index: 1;
+        }
+
+        &-item-previous {
+            left: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        &-item-next {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+}

@@ -34,8 +34,10 @@
         text-align: center;
 
         select {
+            line-height: @line-height__xl;
             .lib-css(background-color, @toolbar-element-background);
-            .lib-css(box-shadow, @button__shadow);
+            .lib-css(box-shadow, none);
+            .lib-css(border, 1px solid @color-black_dark);
             border-radius: 3px;
         }
         .sorter-action {
@@ -240,6 +242,12 @@
         .products.wrapper ~ & .limiter {
             display: block;
             float: right;
+        }
+
+        &-products {
+            border-top: 1px solid @border-color__base;
+            border-bottom: 1px solid @border-color__base;
+            padding: 8px 5px;
         }
     }
 }

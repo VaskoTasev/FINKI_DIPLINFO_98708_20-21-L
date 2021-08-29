@@ -284,6 +284,19 @@
 
                 &.overview {
                     margin: @indent__base 0;
+                    padding: @indent__s + 5px @indent__m;
+                    background: @color-gray-light01;
+
+                    .type {
+                        display: block;
+                        .lib-font-size(18);
+                        font-weight: @font-weight__bold;
+                        margin: @indent__xs 0 @indent__s;
+                    }
+
+                    > p {
+                        margin: 0;
+                    }
                 }
             }
 
