@@ -30,6 +30,27 @@
     //  Product Lists
     .products {
         margin: @indent__l 0;
+
+        &-list {
+            .product {
+
+                .price-container {
+                    .price {
+                        .lib-font-size(24);
+
+                        &-label {
+                            .lib-font-size(14);
+                        }
+                    }
+                }
+
+                &-item {
+                    &-name {
+                        font-size: @font-size__xl;
+                    }
+                }
+            }
+        }
     }
 
     .product {
@@ -55,7 +76,6 @@
             &:extend(.abs-add-box-sizing all);
 
             &-name {
-                font-size: @font-size__xl;
                 &:extend(.abs-product-link all);
                 -moz-hyphens: auto;
                 -ms-hyphens: auto;
