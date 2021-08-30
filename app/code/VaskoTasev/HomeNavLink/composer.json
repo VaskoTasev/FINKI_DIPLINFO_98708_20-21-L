@@ -1,0 +1,22 @@
+{
+    "name": "vaskotasev/module-homenavlink",
+    "description": "Insert the Home Navigation Link Item in the Main Menu",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Vasko Tasev",
+            "email": "vasko.tasev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "VaskoTasev\\HomeNavLink\\": ""
+        }
+    }
+}
