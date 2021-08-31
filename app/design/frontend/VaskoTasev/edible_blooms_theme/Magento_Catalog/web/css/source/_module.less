@@ -123,6 +123,17 @@
                 @_icon-font-position: before
             );
         }
+
+        .qty {
+            .label {
+                text-transform: uppercase;
+            }
+
+            .qty-input-wrapper {
+                display: inline-block;
+                margin-left: @indent__s;
+            }
+        }
     }
 
     .product.media {
@@ -255,8 +266,19 @@
 
             &.available,
             &.unavailable {
-                font-weight: @font-weight__bold;
+                padding: @indent__xs @indent__s;
+                font-weight: @font-weight__extrabold;
                 text-transform: uppercase;
+            }
+
+            &.available {
+                color: @color-green-primary-dark1;
+                border: 3px solid @color-green-primary-dark1;
+            }
+
+            &.unavailable {
+                color: @color-red-primary-dark1;
+                border: 3px solid @color-red-primary-dark1;
             }
         }
 

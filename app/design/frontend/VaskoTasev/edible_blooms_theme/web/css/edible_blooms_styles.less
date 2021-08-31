@@ -1,0 +1,129 @@
+// /**
+//  * Copyright © Vasko Tasev. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+
+//
+//  Custom theme style overrides
+//  _____________________________________________
+
+
+//
+//  General Styling - Overrides
+//  ---------------------------------------------
+
+&::selection {
+    background: #F44C65;
+    color: #fff;
+}
+
+&::-moz-selection {
+    background: #F44C65;
+    color: #fff;
+}
+
+input[type="text"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(244, 76, 101, 1) !important;
+        border: 1px solid rgba(244, 76, 101, 1);
+        outline-color: rgba(244, 76, 101, 1);
+    }
+}
+
+input[type="password"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(244, 76, 101, 1) !important;
+        border: 1px solid rgba(244, 76, 101, 1);
+        outline-color: rgba(244, 76, 101, 1);
+    }
+}
+
+input[type="email"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(244, 76, 101, 1) !important;
+        border: 1px solid rgba(244, 76, 101, 1);
+        outline-color: rgba(244, 76, 101, 1);
+    }
+}
+
+input[type="tel"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(244, 76, 101, 1) !important;
+        border: 1px solid rgba(244, 76, 101, 1);
+        outline-color: rgba(244, 76, 101, 1);
+    }
+}
+
+textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    overflow: auto;
+    vertical-align: top;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(244, 76, 101, 1) !important;
+        border: 1px solid rgba(244, 76, 101, 1);
+        outline-color: rgba(244, 76, 101, 1);
+    }
+}
+
+select {
+    &:focus {
+        box-shadow: 0 0 5px rgba(244, 76, 101, 1) !important;
+        border: 1px solid rgba(244, 76, 101, 1);
+        outline-color: rgba(244, 76, 101, 1);
+    }
+
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+}
+
+
+//
+//  Banner Slider - Overrides
+//  ---------------------------------------------
+
+.cms-index-index {
+    .nav-sections,
+    .page-header {
+        margin-bottom: 0;
+    }
+}
