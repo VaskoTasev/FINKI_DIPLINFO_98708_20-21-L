@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <csp>
+            <mode>
+                <storefront>
+                    <report_uri>https://164ea70739bfeb732d0cbe8bbc6cfa96.report-uri.com/r/d/csp/reportOnly</report_uri>
+                </storefront>
+                <admin>
+                    <report_uri>https://164ea70739bfeb732d0cbe8bbc6cfa96.report-uri.com/r/d/csp/reportOnly/</report_uri>
+                </admin>
+            </mode>
+        </csp>
+    </default>
+</config>

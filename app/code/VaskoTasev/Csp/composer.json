@@ -1,0 +1,25 @@
+{
+    "name": "vasko-tasev/csp",
+    "version": "1.0.0",
+    "description": "Resolve Content Security Policies Warnings",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Vasko Tasev",
+            "email": "vasko.tasev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "VaskoTasev\\Csp\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
