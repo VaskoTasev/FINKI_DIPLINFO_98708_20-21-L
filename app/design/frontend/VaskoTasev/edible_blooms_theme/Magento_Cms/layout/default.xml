@@ -5,27 +5,29 @@
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
 
-        <!--<referenceContainer name="footer">
-            <container name="cms_footer_links_container" label="CMS Footer Links" htmlTag="div" htmlClass="links" before="footer_links" />
-        </referenceContainer>-->
+        <referenceContainer name="footer">
+            <container name="cms_footer_links_container" label="CMS Footer Links" htmlTag="div" htmlClass="links"
+                       before="footer_links"/>
+        </referenceContainer>
 
-        <!--<referenceBlock name="footer_links">
+        <referenceBlock name="footer_links">
             <block class="Magento\Framework\View\Element\Html\Link\Current" name="privacy-policy-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">Privacy and Cookie Policy</argument>
                     <argument name="path" xsi:type="string">privacy-policy-cookie-restriction-mode</argument>
                 </arguments>
             </block>
-        </referenceBlock>-->
-
-        <referenceBlock name="footer_links" remove="true" />
+        </referenceBlock>
 
         <referenceContainer name="footer">
-            <container name="contacts_footer_container" label="Contact Footer Container" htmlTag="div" htmlClass="links" before="cms_footer_links_container"/>
-            <container name="services_footer_links_container" label="Services Footer Links" htmlTag="div" htmlClass="links" after="cms_footer_links_container" />
+            <container name="contacts_footer_container" label="Contact Footer Container" htmlTag="div" htmlClass="links"
+                       before="cms_footer_links_container"/>
+            <container name="services_footer_links_container" label="Services Footer Links" htmlTag="div"
+                       htmlClass="links" after="cms_footer_links_container"/>
         </referenceContainer>
 
         <referenceContainer name="contacts_footer_container">
@@ -50,7 +52,7 @@
                     <argument name="li_params" xsi:type="array">
                         <item name="class" xsi:type="string">footer-title</item>
                     </argument>
-                    <argument name="inner_text" xsi:type="string">Edible Blooms</argument>
+                    <argument name="inner_text" xsi:type="string">HOW TO FIND US</argument>
                 </arguments>
             </block>
             <block class="Magento\Framework\View\Element\Text\TextList\Item" name="footer.contact.line.1">
@@ -74,9 +76,9 @@
                     <argument name="li_params" xsi:type="array">
                         <item name="class" xsi:type="string">contact-item</item>
                     </argument>
-                    <!--<argument name="inner_text" xsi:type="string">tasev.vasko@students.finki.ukim.mk</argument>-->
-                        <argument name="label" xsi:type="string" translate="true">tasev.vasko@students.finki.ukim.mk</argument>
-                        <argument name="path" xsi:type="string">mailto:tasev.vasko@students.finki.ukim.mk</argument>
+                    <argument name="label" xsi:type="string" translate="true">tasev.vasko@students.finki.ukim.mk
+                    </argument>
+                    <argument name="path" xsi:type="string">mailto:tasev.vasko@students.finki.ukim.mk</argument>
                 </arguments>
             </block>
         </referenceBlock>
@@ -85,7 +87,7 @@
             <container name="footer_services_title_container" htmlTag="div" htmlClass="footer-title">
                 <block class="Magento\Framework\View\Element\Text" name="footer.contact.title">
                     <arguments>
-                        <argument name="text" xsi:type="string">SERVICES/PRODUCTS</argument>
+                        <argument name="text" xsi:type="string">CUSTOMER SERVICE</argument>
                     </arguments>
                 </block>
             </container>
@@ -97,28 +99,16 @@
         </referenceContainer>
 
         <referenceBlock name="footer_links_services">
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="magento-2-extensions">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="allergy-warning">
                 <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Magento 2 Extensions</argument>
-                    <argument name="path" xsi:type="string">magento-2-extensions</argument>
+                    <argument name="label" xsi:type="string" translate="true">Allergy Warning</argument>
+                    <argument name="path" xsi:type="string">allergy-warning</argument>
                 </arguments>
             </block>
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="service-magento-2-development">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-service">
                 <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Magento 2 Development</argument>
-                    <argument name="path" xsi:type="string">services/magento-2-development</argument>
-                </arguments>
-            </block>
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="service-magento-2-migration">
-                <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Magento 2 Migration</argument>
-                    <argument name="path" xsi:type="string">services/magento-2-migration</argument>
-                </arguments>
-            </block>
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="service-magento-2-optimization">
-                <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Magento 2 Optimization</argument>
-                    <argument name="path" xsi:type="string">services/magento-2-optimization</argument>
+                    <argument name="label" xsi:type="string" translate="true">Customer Service</argument>
+                    <argument name="path" xsi:type="string">customer-service</argument>
                 </arguments>
             </block>
         </referenceBlock>
@@ -127,7 +117,7 @@
             <container name="footer_company_info_title_container" htmlTag="div" htmlClass="footer-title">
                 <block class="Magento\Framework\View\Element\Text" name="footer_company_info_title">
                     <arguments>
-                        <argument name="text" xsi:type="string">COMPANY</argument>
+                        <argument name="text" xsi:type="string">CORPORATE</argument>
                     </arguments>
                 </block>
             </container>
@@ -145,14 +135,24 @@
                     <argument name="path" xsi:type="string">about</argument>
                 </arguments>
             </block>
-
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="career-link">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="brands-link">
                 <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Career</argument>
-                    <argument name="path" xsi:type="string">career</argument>
+                    <argument name="label" xsi:type="string" translate="true">Our Brands</argument>
+                    <argument name="path" xsi:type="string">brands</argument>
                 </arguments>
             </block>
-
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="careers-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Careers</argument>
+                    <argument name="path" xsi:type="string">careers</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="news-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">News &amp; Media</argument>
+                    <argument name="path" xsi:type="string">news</argument>
+                </arguments>
+            </block>
             <block class="Magento\Framework\View\Element\Html\Link\Current" name="terms-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">Terms and Conditions</argument>
@@ -161,7 +161,15 @@
             </block>
         </referenceBlock>
 
-        <move element="privacy-policy-link" destination="footer_links_cms" />
+        <!-- Remove Block Elements -->
+        <referenceBlock name="footer_links" remove="true"/>
+
+        <!-- Move Block Elements -->
+        <move element="contact-us-link" destination="footer_links_cms" after="news-link" before="terms-link"/>
+        <move element="catalog-search-advanced-link" destination="footer_links_services" after="customer-service"/>
+        <move element="search-term-popular-link" destination="footer_links_services" after="catalog-search-advanced-link"/>
+        <move element="sales-guest-form-link" destination="footer_links_services" after="search-term-popular-link"/>
+        <move element="privacy-policy-link" destination="footer_links_services" after="sales-guest-form-link"/>
 
     </body>
 </page>
