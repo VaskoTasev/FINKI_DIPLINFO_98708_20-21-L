@@ -14,7 +14,7 @@
         </policy>
         <policy id="style-src">
             <values>
-                <value id="example" type="host">*.example.com</value>
+                <value id="fontawesome" type="host">*.fontawesome.com</value>
             </values>
         </policy>
         <policy id="img-src">
@@ -29,7 +29,7 @@
         </policy>
         <policy id="font-src">
             <values>
-                <value id="example" type="host">*.example.com</value>
+                <value id="fontawesome" type="host">*.fontawesome.com</value>
             </values>
         </policy>
     </policies>
