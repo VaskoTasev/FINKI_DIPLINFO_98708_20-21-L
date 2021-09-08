@@ -10,20 +10,6 @@
     <body>
 
         <referenceContainer name="footer">
-            <container name="cms_footer_links_container" label="CMS Footer Links" htmlTag="div" htmlClass="links"
-                       before="footer_links"/>
-        </referenceContainer>
-
-        <referenceBlock name="footer_links">
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="privacy-policy-link">
-                <arguments>
-                    <argument name="label" xsi:type="string" translate="true">Privacy and Cookie Policy</argument>
-                    <argument name="path" xsi:type="string">privacy-policy-cookie-restriction-mode</argument>
-                </arguments>
-            </block>
-        </referenceBlock>
-
-        <referenceContainer name="footer">
             <container name="contacts_footer_container" label="Contact Footer Container" htmlTag="div" htmlClass="links"
                        before="cms_footer_links_container"/>
             <container name="services_footer_links_container" label="Services Footer Links" htmlTag="div"
@@ -71,14 +57,12 @@
                     <argument name="inner_text" xsi:type="string">Chicago, 60607, United States</argument>
                 </arguments>
             </block>
-            <block class="Magento\Framework\View\Element\Html\Link\Current" name="footer.contact.line.3">
+            <block class="Magento\Framework\View\Element\Text\TextList\Item" name="footer.contact.line.3">
                 <arguments>
                     <argument name="li_params" xsi:type="array">
-                        <item name="class" xsi:type="string">contact-item</item>
+                        <item name="class" xsi:type="string">contact-item contact-phone</item>
                     </argument>
-                    <argument name="label" xsi:type="string" translate="true">tasev.vasko@students.finki.ukim.mk
-                    </argument>
-                    <argument name="path" xsi:type="string">mailto:tasev.vasko@students.finki.ukim.mk</argument>
+                    <argument name="inner_text" xsi:type="string">+389 78 361 402</argument>
                 </arguments>
             </block>
         </referenceBlock>
