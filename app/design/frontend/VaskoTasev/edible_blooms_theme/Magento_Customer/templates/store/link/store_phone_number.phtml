@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Vasko Tasev. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+use Magento\Framework\App\ObjectManager;
+use Magento\Store\Model\ScopeInterface;
+
+?>
+
+<?php
+$objectManager = ObjectManager::getInstance();
+$scopeConfig = $objectManager->create('\Magento\Framework\App\Config\ScopeConfigInterface');
+$getStoreInfoPhone = $scopeConfig->getValue('general/store_information/phone', ScopeInterface::SCOPE_STORE);
+?>
+
+<li>
+    <a class="phone-link-icon" href="tel:<?= $getStoreInfoPhone; ?>>" title="Call Us"><?= $getStoreInfoPhone; ?></a>
+</li>
+
+

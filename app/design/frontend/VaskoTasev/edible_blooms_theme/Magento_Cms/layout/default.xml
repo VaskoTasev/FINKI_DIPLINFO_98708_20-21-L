@@ -57,14 +57,7 @@
                     <argument name="inner_text" xsi:type="string">Chicago, 60607, United States</argument>
                 </arguments>
             </block>
-            <block class="Magento\Framework\View\Element\Text\TextList\Item" name="footer.contact.line.3">
-                <arguments>
-                    <argument name="li_params" xsi:type="array">
-                        <item name="class" xsi:type="string">contact-item contact-phone</item>
-                    </argument>
-                    <argument name="inner_text" xsi:type="string">+389 78 361 402</argument>
-                </arguments>
-            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="footer.contact.line.3" template="Magento_Customer::store/link/store_phone_number.phtml"/>
         </referenceBlock>
 
         <referenceContainer name="services_footer_links_container">
