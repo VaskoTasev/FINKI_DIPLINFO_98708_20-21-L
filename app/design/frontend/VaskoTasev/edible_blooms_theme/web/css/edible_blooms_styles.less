@@ -78,6 +78,7 @@ select {
     -ms-transition: all 0.25s ease-in-out;
 }
 
+
 //
 //  Header Links Section - Overrides
 //  ---------------------------------------------
@@ -119,6 +120,67 @@ select {
             }
         }
     }
+}
+
+
+//
+//  Mini Cart - Overrides
+//  ---------------------------------------------
+
+.block-minicart .block-content > .actions > .primary .action.primary {
+    line-height: 2rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.block-minicart .block-content > .actions > .secondary {
+    margin: -5px 10px 0 10px;
+}
+
+.block-minicart .block-content > .actions > .secondary .action.viewcart {
+    display: block;
+    width: 100%;
+    line-height: 2rem;
+    background-image: none;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.block-minicart .block-content > .actions > .secondary .action.viewcart:hover {
+    text-decoration: none;
+    background: #f4f4f4;
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .block-minicart .block-content > .actions > .primary .action.primary {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+    }
+    .block-minicart .block-content > .actions > .secondary .action.viewcart {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+    }
+}
+
+
+//
+//  My Account - Overrides
+//  ---------------------------------------------
+
+.products-grid.wishlist .product-item .box-tocart .tocart {
+    font-size: 1.6rem;
+    line-height: inherit;
+    padding: 8px 15px;
 }
 
 
