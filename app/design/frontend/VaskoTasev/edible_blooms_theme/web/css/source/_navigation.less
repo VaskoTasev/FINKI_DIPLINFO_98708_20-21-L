@@ -299,6 +299,24 @@
     .nav-sections-item-content {
         > .navigation {
             display: block;
+
+            > ul {
+                text-align: center;
+
+                > li > ul {
+                    text-align: left;
+                }
+            }
+
+            .level0 {
+                margin: 0 @indent__m 0 0;
+
+                > .level-top {
+                    font-size: @font-size__base;
+                    font-weight: @font-weight__semibold;
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 
