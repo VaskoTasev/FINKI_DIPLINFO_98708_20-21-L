@@ -1,0 +1,60 @@
+<?php
+/**
+ * Copyright © Vasko Tasev. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+?>
+<div class="block newsletter">
+    <div class="title"><strong><?= $block->escapeHtml(__('Be the First to Know')) ?></strong></div>
+    <div class=""><p><?= $block->escapeHtml(__('Subscribe to get the latest news and promotions')) ?></p></div>
+    <div class="content">
+        <form class="form subscribe"
+            novalidate
+            action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <div class="control">
+                    <label for="newsletter">
+                        <span class="label">
+                            <?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?>
+                        </span>
+                        <input name="email" type="email" id="newsletter"
+                               placeholder="<?= $block->escapeHtml(__('Enter your email address')) ?>"
+                               data-mage-init='{"mage/trim-input":{}}'
+                               data-validate="{required:true, 'validate-email':true}"
+                        />
+                    </label>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary"
+                        title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>"
+                        type="submit"
+                        aria-label="Subscribe">
+                    <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="title"><strong><?= $block->escapeHtml(__('Follow Us')) ?></strong></div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/vasko.tasev" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/vaskotasev" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/vaskotasevwork/" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="https://www.youtube.com/channel/UCu7Gx6GKfwNHZrTdDFj0lNQ" title="Youtube"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:tasev.vasko@students.finki.ukim.mk" title="Send Us An Email"><i class="fas fa-envelope"></i></a>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/block-submit-on-send": {
+                "formId": "newsletter-validate-detail"
+            }
+        }
+    }
+</script>

@@ -1,0 +1,263 @@
+// /**
+//  * Copyright © Vasko Tasev. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+
+//
+//  Custom theme style overrides
+//  _____________________________________________
+
+
+//
+//  General Styling - Overrides
+//  ---------------------------------------------
+
+&::selection {
+    background: #F5BD1F;
+    color: #000;
+}
+
+&::-moz-selection {
+    background: #F5BD1F;
+    color: #000;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(245, 189, 31, 1) !important;
+        border: 1px solid rgba(245, 189, 31, 1);
+        outline-color: rgba(245, 189, 31, 1);
+    }
+}
+
+textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    overflow: auto;
+    vertical-align: top;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(245, 189, 31, 1) !important;
+        border: 1px solid rgba(245, 189, 31, 1);
+        outline-color: rgba(245, 189, 31, 1);
+    }
+}
+
+select {
+    &:focus {
+        box-shadow: 0 0 5px rgba(245, 189, 31, 1) !important;
+        border: 1px solid rgba(245, 189, 31, 1);
+        outline-color: rgba(245, 189, 31, 1);
+    }
+
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+}
+
+
+//
+//  Header Links Section - Overrides
+//  ---------------------------------------------
+
+.header.panel {
+    > .header.links {
+        > li {
+            .account-link-icon {
+                &::before {
+                    display: inline-block;
+                    font-family: "Font Awesome 5 Free", serif;
+                    font-weight: 900;
+                    content: "\f007";
+                    color: #303030;
+                    margin-right: 8px;
+                }
+            }
+
+            .wishlist-link-icon {
+                &::before {
+                    display: inline-block;
+                    font-family: "Font Awesome 5 Free", serif;
+                    font-weight: 900;
+                    content: "\f004";
+                    color: #303030;
+                    margin-right: 8px;
+                }
+            }
+
+            .phone-link-icon {
+                &::before {
+                    display: inline-block;
+                    font-family: "Font Awesome 5 Free", serif;
+                    font-weight: 900;
+                    content: "\f879";
+                    color: #303030;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+//
+//  Mini Cart - Overrides
+//  ---------------------------------------------
+
+.block-minicart .block-content > .actions > .primary .action.primary {
+    line-height: 2rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.block-minicart .block-content > .actions > .secondary {
+    margin: -5px 10px 0 10px;
+}
+
+.block-minicart .block-content > .actions > .secondary .action.viewcart {
+    display: block;
+    width: 100%;
+    line-height: 2rem;
+    background: transparent none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.block-minicart .block-content > .actions > .secondary .action.viewcart:hover {
+    text-decoration: none;
+    background: #f4f4f4;
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .block-minicart .block-content > .actions > .primary .action.primary {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+    }
+    .block-minicart .block-content > .actions > .secondary .action.viewcart {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+    }
+}
+
+
+//
+//  My Account - Overrides
+//  ---------------------------------------------
+
+.products-grid.wishlist .product-item .box-tocart .tocart {
+    font-size: 1.6rem;
+    line-height: inherit;
+    padding: 8px 15px;
+}
+
+
+//
+//  Banner Slider - Overrides
+//  ---------------------------------------------
+
+.cms-index-index {
+    .nav-sections,
+    .page-header {
+        margin-bottom: 0;
+    }
+}
+
+
+//
+//  Footer Section - Overrides
+//  ---------------------------------------------
+
+.footer {
+    &.content {
+        border-top: none;
+        margin-top: 0;
+        padding-bottom: 0;
+
+        .logo {
+            float: none;
+            position: relative;
+            top: 0;
+
+            img {
+                max-width: 225px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .social-media {
+            a > i {
+                font-size: 18px;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                margin-right: 8px;
+                text-align: center;
+                line-height: 20px;
+                vertical-align: middle;
+                color: #303030;
+                border: 2px solid #303030;
+                border-radius: 50%;
+            }
+
+            a:hover > i {
+                color: #000;
+                border-color: #000;
+            }
+        }
+    }
+
+    &.links.address {
+        margin: 0;
+
+        .phone-link-icon {
+            font-weight: 600;
+
+            &::before {
+                display: inline-block;
+                font-family: "Font Awesome 5 Free", serif;
+                font-weight: 900;
+                content: "\f879";
+                color: #303030;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.footer-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
