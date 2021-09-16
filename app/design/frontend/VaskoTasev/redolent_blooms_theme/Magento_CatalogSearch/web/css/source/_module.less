@@ -13,8 +13,8 @@
 @autocomplete-item__hover__color: @color-gray91;
 @autocomplete-item-amount__color: @color-gray60;
 
-@search-icon-color: @color-white;
-@search-icon-color-hover: @color-white;
+@search-icon-color: @color-gray46;
+@search-icon-color-hover: @color-gray20;
 
 //
 //  Common
@@ -254,28 +254,28 @@
             display: inline-block;
             .lib-button-icon(
             @_icon-font-content: @icon-search,
-            @_icon-font-size: 16px,
+            @_icon-font-size: 20px,
             @_icon-font-text-hide: true,
             @_icon-font-color: @search-icon-color,
             @_icon-font-color-hover: @search-icon-color-hover,
             @_icon-font-line-height: 32px
             );
             .lib-button-reset();
-            background-color: @color-red-primary;
+            background-color: transparent;
             border-radius: 0;
-            width: 35px;
+            width: 45px;
             position: absolute;
             right: 0;
             top: 0;
             z-index: 1;
 
             &:hover {
-                background-color: @color-red-primary-dark1;
+                background-color: transparent;
             }
 
             &:focus {
                 &:before {
-                    .lib-css(color, @color-white);
+                    .lib-css(color, @color-black);
                 }
             }
         }
